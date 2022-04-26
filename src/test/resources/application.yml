@@ -1,0 +1,13 @@
+spring:
+  data:
+    cassandra:
+      local-datacenter: datacenter1
+      keyspace-name: test
+      schema-action: none
+      contact-points: localhost:9042
+
+cassandra:
+  embedded:
+    version: 4.0.1
+    environment-variables:
+      JAVA_HOME: ${JAVA_8_HOME}
