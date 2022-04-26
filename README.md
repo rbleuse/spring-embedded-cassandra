@@ -1,6 +1,10 @@
 # Local build :
 
-```
+```sh
+spring-embedded-cassandra ts-remi.bleuse$ echo $JAVA_HOME
+/Users/ts-remi.bleuse/Library/Java/JavaVirtualMachines/azul-17.0.3/Contents/Home/
+spring-embedded-cassandra ts-remi.bleuse$ echo $JAVA_8_HOME
+/Users/ts-remi.bleuse/Library/Java/JavaVirtualMachines/azul-1.8.0_332/Contents/Home/
 spring-embedded-cassandra ts-remi.bleuse$ ./gradlew clean build
 
 > Task :test
@@ -25,7 +29,7 @@ BUILD SUCCESSFUL in 1m 9s
 
 # Docker build :
 
-```
+```sh
 spring-embedded-cassandra ts-remi.bleuse$ docker build -t test-demo .
 ...
 #9 201.9     2022-04-26 04:13:08.955  INFO 167 --- [    Test worker] c.g.n.e.c.WebCassandraDirectoryProvider  : Cassandra directory: '/root/.embedded-cassandra/cassandra/4.0.1/apache-cassandra-4.0.1' is initialized.
