@@ -9,5 +9,6 @@ spring:
 cassandra:
   embedded:
     version: 4.0.1
+    startup-timeout: 5m
     environment-variables:
       JAVA_HOME: ${JAVA_8_HOME}
