@@ -1,4 +1,4 @@
-FROM azul/zulu-openjdk-alpine:17.0.3-jre AS build
+FROM azul/zulu-openjdk-alpine:17.0.3 AS build
 RUN apk add --no-cache openjdk8
 ENV JAVA_HOME: /usr/lib/jvm/java-17-openjdk
 ENV JAVA_8_HOME=/usr/lib/jvm/java-1.8-openjdk
